@@ -122,11 +122,11 @@ void loop()
 void getTime() {
   const int NTP_PACKET_SIZE = 48;
   byte packetBuffer[ NTP_PACKET_SIZE];
-  //IPAddress timeServerIP;
+  IPAddress timeServerIP;
 
   refreshTime = 0;
-  IPAddress timeServerIP(172, 17, 2, 21);
-  //WiFi.hostByName("time.nist.gov", timeServerIP);
+  //IPAddress timeServerIP(172, 17, 2, 21);
+  WiFi.hostByName("pool.ntp.org", timeServerIP);
   memset(packetBuffer, 0, NTP_PACKET_SIZE);
   packetBuffer[0] = 0b11100011;   // LI, Version, Mode
   packetBuffer[1] = 0;     // Stratum, or type of clock
