@@ -7,7 +7,7 @@ I'm feeding the output pin to the base of an NPN transistor through a 1k ohm res
 Emitter to ground and collector to one side of the coil which has 3v on the other. Don't forget a 1N400x acoss the coil
 for flyback control
 
-There is a very simple web interfase on port 80 of the ESP which wll allow you to advance or delay a number of seconds
+There is a very simple web interface on port 80 of the ESP which wll allow you to advance or delay a number of seconds
 which allows adjusting for DST/STD time.
 
 This is relatively power hungry, so not really suited for battery usage.
